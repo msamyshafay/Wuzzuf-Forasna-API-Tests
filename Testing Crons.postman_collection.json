@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "c452bbc0-c852-4d23-83f8-4f80026ba472",
+		"name": "Testing Crons",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43141913",
+		"_collection_link": "https://wuzzuf-testing.postman.co/workspace/My-Workspace~89ce73e4-f3aa-4f97-8275-2ebc8f3402d2/collection/43141913-c452bbc0-c852-4d23-83f8-4f80026ba472?action=share&source=collection_link&creator=43141913"
+	},
+	"item": [
+		{
+			"name": "Forasna",
+			"item": [
+				{
+					"name": "recommended_jobs_email/1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://testing.forasna.com/cron/recommended_jobs_email/1",
+							"protocol": "http",
+							"host": [
+								"testing",
+								"forasna",
+								"com"
+							],
+							"path": [
+								"cron",
+								"recommended_jobs_email",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "#ZeroPostedJobsMail",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://testing.forasna.com/cron/zero_posted_jobs_emails mail",
+							"protocol": "http",
+							"host": [
+								"testing",
+								"forasna",
+								"com"
+							],
+							"path": [
+								"cron",
+								"zero_posted_jobs_emails mail"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "WUZZUF",
+			"item": [
+				{
+					"name": "For indexing the Jobs to be shown on Search",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "/solr/index_jobs",
+							"path": [
+								"solr",
+								"index_jobs"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
